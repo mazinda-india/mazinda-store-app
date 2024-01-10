@@ -1,6 +1,5 @@
 import { SafeAreaView, Text, View } from "react-native";
 import { fetchStoreData } from "../redux/StoreReducer";
-import { fetchStoriesData } from "../redux/StoryReducer";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
@@ -14,7 +13,6 @@ const HomeScreen = () => {
 
   useEffect(() => {
     dispatch(fetchStoreData());
-    dispatch(fetchStoriesData());
   }, []);
 
   return (

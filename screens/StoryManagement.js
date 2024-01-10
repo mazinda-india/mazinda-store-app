@@ -9,15 +9,13 @@ import {
   RefreshControl,
 } from "react-native";
 import Navbar from "../components/Navbar";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { ScrollView } from "react-native-virtualized-view";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import axios from "axios";
-import { fetchStoriesData, updateStories } from "../redux/StoryReducer";
 import { useEffect, useState } from "react";
 
 const StoryManagement = () => {
-  const dispatch = useDispatch();
   const store = useSelector((state) => state.store.store);
 
   const [stories, setStories] = useState([]);
@@ -50,6 +48,7 @@ const StoryManagement = () => {
   };
 
   const deleteStory = async (story_id) => {
+    setLoading(true);
     const { data } = await axios.put(
       "https://mazinda.com/api/story/delete-story",
       {
@@ -58,10 +57,11 @@ const StoryManagement = () => {
     );
     if (data.success) {
       const updated_stories = stories.filter((story) => story._id !== story_id);
-      dispatch(updateStories({ updated_stories }));
+      setStories(updated_stories);
     } else {
       Alert.alert("Failed", "Failed to delete story. Please try again later");
     }
+    setLoading(false);
   };
 
   useEffect(() => {

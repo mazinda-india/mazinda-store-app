@@ -81,9 +81,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'host.exp.exponent'
+    namespace 'com.Mazinda.MazindaStore'
     defaultConfig {
-        applicationId 'host.exp.exponent'
+        applicationId 'com.Mazinda.MazindaStore'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

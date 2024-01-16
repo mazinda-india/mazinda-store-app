@@ -1,4 +1,4 @@
-package host.exp.exponent;
+package com.Mazinda.MazindaStore;
 
 import android.app.Application;
 import android.content.res.Configuration;

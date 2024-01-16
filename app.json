@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mazinda-store-app",
-    "slug": "mazinda-store-app",
+    "name": "MazindaStore",
+    "slug": "MazindaStore",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "host.exp.exponent"
@@ -23,7 +21,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "host.exp.exponent"
+      "package": "com.Mazinda.MazindaStore"
     },
     "web": {
       "favicon": "./assets/favicon.png"

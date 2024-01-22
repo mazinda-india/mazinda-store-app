@@ -50,7 +50,7 @@ const StoryManagement = () => {
   const deleteStory = async (story_id) => {
     setLoading(true);
     const { data } = await axios.put(
-      "https://mazinda.com/api/story/delete-story",
+      "https://store.mazinda.com/api/story/delete-story",
       {
         story_id,
       }

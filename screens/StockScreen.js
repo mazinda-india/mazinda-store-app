@@ -51,7 +51,6 @@ const StockScreen = () => {
       );
 
       if (data.success) {
-        console.log(data);
         setFilteredProducts((prevProducts) =>
           prevProducts.map((product) =>
             product._id === id

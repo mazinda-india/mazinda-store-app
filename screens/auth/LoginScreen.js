@@ -229,20 +229,6 @@ const LoginScreen = () => {
             >
               Store Login
             </Text>
-
-            {/* <TouchableOpacity onPress={() => navigation.navigate("Register")}>
-              <Text
-                style={{
-                  fontSize: 18,
-                  color: "#4b5563",
-                }}
-              >
-                or{" "}
-                <Text style={{ textDecorationLine: "underline" }}>
-                  register store
-                </Text>
-              </Text>
-            </TouchableOpacity> */}
           </View>
 
           <View style={{ alignItems: "center", marginTop: 15 }}>

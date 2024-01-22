@@ -38,6 +38,7 @@ const AddStory = ({
             imageURI:
               "https://www.iconpacks.net/icons/2/free-store-icon-2017-thumb.png",
             storeName: store.storeName,
+            city: store.storeAddress.city,
           },
           specialPrice,
           isSponsored: true,
